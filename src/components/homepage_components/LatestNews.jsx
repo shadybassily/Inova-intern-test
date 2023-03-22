@@ -17,8 +17,6 @@ export default function LatestNews() {
    if (isLoading) return 'Loading...';
    if (error) return 'An error has occurred: ' + error.message;
 
-   console.log(latestNews);
-
    return (
       <div className='flex flex-wrap gap-6 justify-center '>
       {latestNews.map(item => (
